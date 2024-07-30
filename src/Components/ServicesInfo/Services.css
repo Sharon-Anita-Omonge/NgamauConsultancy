@@ -1,0 +1,97 @@
+.service {
+	overflow-x: hidden !important;
+}
+.hero-services {
+	position: relative;
+	width: 100%;
+	height: 95vh; /* Adjust height as needed */
+	background-image: url("../../assets/con1.jpg"); /* Replace with your image path */
+	background-size: cover; /* Ensures the image covers the area */
+	background-position: center; /* Centers the image */
+	background-repeat: no-repeat; /* Prevents the image from repeating */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-services .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2); /* Dark overlay with 50% opacity */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-services .overlay h1 {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+.service-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 5%;
+	align-items: center;
+}
+
+.item {
+	flex: 1 0 calc(33.33% - 10px); /* Adjust 10px to match the gap value */
+	box-sizing: border-box;
+	max-width: 380px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.service-pic {
+	min-width: 380px;
+	height: 250px;
+	object-fit: cover;
+}
+
+.service-link {
+	text-decoration: none;
+	color: #000;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+}
+.service-link:hover {
+	color: var(--yellow);
+}
+.arrow {
+	width: 20px;
+	margin-left: 5px;
+}
+
+/* media querry */
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+	.item {
+		flex: 1 0 calc(50% - 10px);
+	}
+	.service-list {
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+	.item:last-child {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+	.item {
+		flex: 1 0 calc(100% - 10px);
+	}
+}
