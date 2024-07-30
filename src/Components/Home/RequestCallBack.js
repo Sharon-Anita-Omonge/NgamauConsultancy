@@ -50,7 +50,7 @@ const RequestCallback = () => {
 							<option value='investment'>Quality Survey consultancy</option>
 						</Select>
 						<label htmlFor='first-name'>First name</label>
-						<input type='text' id='first-name' name='first-name' required />
+						<input type='text' id='first-name' name='first-name' required s />
 						<label htmlFor='phone'>Phone number</label>
 						<input type='text' id='phone' name='phone' required />
 						<button type='submit' className='btn'>
