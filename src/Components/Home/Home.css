@@ -179,3 +179,14 @@ form {
 	border: none;
 	outline: var(--blue);
 }
+.sending-message {
+	color: var(--blue);
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.form-status {
+	color: var(--yellow);
+	font-size: 16px;
+	margin-bottom: 10px;
+}
