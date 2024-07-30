@@ -8,7 +8,7 @@ import listpic2 from "../../assets/listpic2.jpg";
 import listpic4 from "../../assets/listpic4.jpg";
 import arrowup from "../../assets/arrow-up.png";
 import image1 from "../../assets/image1.jpg";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HomeAbout from "./HomeCollapsable";
 import RequestCallback from "./RequestCallBack";
 
@@ -125,12 +125,12 @@ const Home = () => {
 							<li>Quality Survey consultancy</li>
 						</ul>
 					</div>
-					<NavLink to='/services'>
-						<button className='btn button' type='link'>
+					<Link to='/services' className='nav-link'>
+						<button className='btn button' type='button'>
 							View more
-							<img src={arrowup} alt='' className='arrow-up' />
+							<img src={arrowup} alt='arrow up' className='arrow-up' />
 						</button>
-					</NavLink>
+					</Link>
 				</div>
 				<div className='list-right'>
 					<img src={listpic2} alt='' id='list1' />
@@ -153,12 +153,12 @@ const Home = () => {
 							efforts.
 						</p>
 					</div>
-					<NavLink to='/portfolio'>
+					<Link to='/portfolio' className='nav-link'>
 						<button className='btn button' type='link'>
 							View more
 							<img src={arrowup} alt='' className='arrow-up' />
 						</button>
-					</NavLink>
+					</Link>
 				</div>
 			</div>
 			<div>

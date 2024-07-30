@@ -47,7 +47,22 @@ form {
 	font-weight: 450;
 }
 .button {
-	margin-top: 5%;
+	border: none;
+	outline: none;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	cursor: pointer;
+}
+.nav-link {
+	text-decoration: none;
+}
+
+.btn.button img.arrow-up {
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
 }
 .list-right {
 	width: 40%;
