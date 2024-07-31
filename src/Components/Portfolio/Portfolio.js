@@ -5,6 +5,7 @@ import samburu from "../../assets/samburu.jpg";
 import kitui from "../../assets/kitui.jpg";
 import housing from "../../assets/housing.jpg";
 import waste from "../../assets/waste.jpg";
+import kisumu from "../../assets/kisumu.jpg";
 
 const Portfolio = () => {
 	return (
@@ -28,9 +29,9 @@ const Portfolio = () => {
 					link='/samburu'
 				/>
 				<PortfolioItem
-					image={samburu}
-					title='Agriculture'
-					description='Soil Analysis'
+					image={kisumu}
+					title='Engineering'
+					description='Street Lights Maintainance'
 					link='/kisumu'
 				/>
 				<PortfolioItem
