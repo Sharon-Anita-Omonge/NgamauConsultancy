@@ -8,7 +8,7 @@ import "./Hero.css";
 
 const images = [
 	{ src: con1, caption: "Helping Companies Navigate Changes" },
-	{ src: con2, caption: "A partner for Growth and Transformation" },
+	{ src: con2, caption: "A Partner for Growth and Transformation" },
 	{ src: con3, caption: "Idea & Innovation in Every Step" },
 	{ src: con4, caption: "We Build Trust in Our Customer's Mind" },
 	{ src: con5, caption: "Ngamau Limited - Beyond Consulting" },
@@ -26,7 +26,7 @@ const Hero = () => {
 	}, []);
 
 	return (
-		<div className='hero'>
+		<div className='hero' style={{ OverflowX: "hidden" }}>
 			{images.map((image, index) => (
 				<div
 					key={index}
