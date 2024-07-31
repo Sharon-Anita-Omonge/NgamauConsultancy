@@ -14,48 +14,57 @@ const Portfolio = () => {
 			<div className='portfolio container'>
 				<PortfolioItem
 					image={samburu}
-					title='Business'
-					description='Market Analysis'
+					title='Research'
+					description='Samburu Water Analysis'
+					link='/samburu'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Agriculture'
+					description='Soil Analysis'
+					link='/kitui'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Engineering'
+					description='Structural Analysis'
+					link='/engineering'
 				/>
 				<PortfolioItem
 					image={samburu}
 					title='Business'
 					description='Market Analysis'
+					link='/kitui'
 				/>
 				<PortfolioItem
 					image={samburu}
 					title='Business'
 					description='Market Analysis'
+					link='/kitui'
 				/>
 				<PortfolioItem
 					image={samburu}
 					title='Business'
 					description='Market Analysis'
+					link='/kitui'
 				/>
 				<PortfolioItem
 					image={samburu}
 					title='Business'
 					description='Market Analysis'
+					link='/kitui'
 				/>
 				<PortfolioItem
 					image={samburu}
 					title='Business'
 					description='Market Analysis'
+					link='/kitui'
 				/>
 				<PortfolioItem
 					image={samburu}
 					title='Business'
 					description='Market Analysis'
-				/>
-				<PortfolioItem
-					image={samburu}
-					title='Business'
-					description='Market Analysis'
-				/>
-				<PortfolioItem
-					image={samburu}
-					title='Business'
-					description='Market Analysis'
+					link='/kitui'
 				/>
 			</div>
 		</div>

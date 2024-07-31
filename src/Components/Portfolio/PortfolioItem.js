@@ -1,14 +1,14 @@
 import React from "react";
 import "./Portfolio.css";
-import arrow from "../../assets/arrow-up.png"; // Example arrow icon
+import arrow from "../../assets/arrow-up.png";
 import { Link } from "react-router-dom";
 
-const PortfolioItem = ({ image, title, description }) => {
+const PortfolioItem = ({ image, title, description, link }) => {
 	return (
 		<div className='portfolio-item'>
 			<img src={image} alt={title} className='portfolio-image' />
 			<div className='overlay-portfolio'>
-				<Link to='/samburu'>
+				<Link to={link}>
 					<img src={arrow} alt='Arrow' className='arrow-icon' />
 				</Link>
 				<div className='text-container'>

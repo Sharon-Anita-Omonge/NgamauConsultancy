@@ -14,6 +14,8 @@ import Engineering from "./Components/ServiceDetails/Engineering";
 import ProjectManagement from "./Components/ServiceDetails/ProjectManagement";
 import QualitySurvey from "./Components/ServiceDetails/QualitySurvey";
 import ScrollToTopButton from "./Components/ScrollToTop/ScrollToTop";
+import Samburu from "./Components/Casestudy/Samburu";
+import Kitui from "./Components/Casestudy/Kitui";
 
 function App() {
 	return (
@@ -35,6 +37,8 @@ function App() {
 				<Route path='/engineering' element={<Engineering />} />
 				<Route path='/projectmanagement' element={<ProjectManagement />} />
 				<Route path='/qualitysurvey' element={<QualitySurvey />} />
+				<Route path='/samburu' element={<Samburu />} />
+				<Route path='/kitui' element={<Kitui />} />
 			</Routes>
 			<ScrollToTopButton />
 			<Footer />
