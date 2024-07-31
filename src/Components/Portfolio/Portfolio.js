@@ -1,31 +1,63 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 import "./Portfolio.css";
-
-const PortfolioItem = ({ image, title, description }) => {
-	return (
-		<div className='portfolio-item'>
-			<img src={image} alt={title} className='portfolio-image' />
-			<div className='overlay'>
-				<div className='text-container'>
-					<h3>{title}</h3>
-					<p>{description}</p>
-					<FaArrowRight className='arrow-icon' />
-				</div>
-			</div>
-		</div>
-	);
-};
+import samburu from "../../assets/samburu.jpg"; // Example image, repeat for each item
+import PortfolioItem from "./PortfolioItem";
 
 const Portfolio = () => {
 	return (
-		<div className='portfolio'>
-			<PortfolioItem
-				image='path_to_image1.jpg'
-				title='Business'
-				description='Market Analysis'
-			/>
-			{/* Add more PortfolioItem components as needed */}
+		<div className='main-portfolio'>
+			<div className='hero-portfolio'>
+				<div className='overlay'>
+					<h1>Case Studies</h1>
+				</div>
+			</div>
+			<div className='portfolio container'>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+				<PortfolioItem
+					image={samburu}
+					title='Business'
+					description='Market Analysis'
+				/>
+			</div>
 		</div>
 	);
 };

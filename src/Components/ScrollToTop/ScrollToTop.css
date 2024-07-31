@@ -23,5 +23,5 @@
 }
 
 .scroll-to-top:hover {
-	background-color: #555;
+	background-color: var(--blue2);
 }
