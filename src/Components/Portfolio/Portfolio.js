@@ -22,13 +22,13 @@ const Portfolio = () => {
 					image={samburu}
 					title='Agriculture'
 					description='Soil Analysis'
-					link='/kitui'
+					link='/kisumu'
 				/>
 				<PortfolioItem
 					image={samburu}
 					title='Engineering'
 					description='Structural Analysis'
-					link='/engineering'
+					link='/kitui'
 				/>
 				<PortfolioItem
 					image={samburu}

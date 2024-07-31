@@ -20,8 +20,8 @@ const Samburu = () => {
 					</p>
 					<div className='case-study-stats'>
 						<div>
-							<h2>5</h2>
-							<p>Project duration (months)</p>
+							<h2>1+</h2>
+							<p>Project expected duration (yrs)</p>
 						</div>
 						<div>
 							<h2>70+</h2>
@@ -29,7 +29,7 @@ const Samburu = () => {
 						</div>
 						<div>
 							<h2>99%</h2>
-							<p>Satisfied Customers</p>
+							<p>Satisfied customers</p>
 						</div>
 					</div>
 					<p>
@@ -94,7 +94,7 @@ const Samburu = () => {
 						Forestry
 					</p>
 					<p>
-						<strong>Completed Date:</strong> 20-07-2024
+						<strong>Commencement Date:</strong> 04 - 03 - 2024
 					</p>
 					<p>
 						<strong>Location:</strong> Samburu County, Kenya

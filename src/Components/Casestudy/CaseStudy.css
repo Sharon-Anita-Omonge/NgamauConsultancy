@@ -1,6 +1,9 @@
 .samburu {
 	overflow-x: hidden;
 }
+.kitui {
+	overflow-x: hidden;
+}
 .case-study {
 	display: flex;
 	flex-wrap: wrap;
@@ -76,6 +79,21 @@
 	width: 100%;
 	height: 95vh;
 	background-image: url("../../assets/samburu.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-color: rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-kitui {
+	position: relative;
+	width: 100%;
+	height: 95vh;
+	background-image: url("../../assets/kitui.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
