@@ -1,7 +1,10 @@
 import React from "react";
 import "./Portfolio.css";
-import samburu from "../../assets/samburu.jpg"; // Example image, repeat for each item
 import PortfolioItem from "./PortfolioItem";
+import samburu from "../../assets/samburu.jpg";
+import kitui from "../../assets/kitui.jpg";
+import housing from "../../assets/housing.jpg";
+import waste from "../../assets/waste.jpg";
 
 const Portfolio = () => {
 	return (
@@ -12,6 +15,12 @@ const Portfolio = () => {
 				</div>
 			</div>
 			<div className='portfolio container'>
+				<PortfolioItem
+					image={housing}
+					title='Project Management'
+					description='Affordable Housing Management'
+					link='/housing'
+				/>
 				<PortfolioItem
 					image={samburu}
 					title='Research'
@@ -25,46 +34,23 @@ const Portfolio = () => {
 					link='/kisumu'
 				/>
 				<PortfolioItem
+					image={kitui}
+					title='Research'
+					description='Kitui Water Analysis'
+					link='/kitui'
+				/>
+
+				<PortfolioItem
 					image={samburu}
+					title='Construction'
+					description='Road Construction Analysis'
+					link='/kalashat'
+				/>
+				<PortfolioItem
+					image={waste}
 					title='Engineering'
-					description='Structural Analysis'
-					link='/kitui'
-				/>
-				<PortfolioItem
-					image={samburu}
-					title='Business'
-					description='Market Analysis'
-					link='/kitui'
-				/>
-				<PortfolioItem
-					image={samburu}
-					title='Business'
-					description='Market Analysis'
-					link='/kitui'
-				/>
-				<PortfolioItem
-					image={samburu}
-					title='Business'
-					description='Market Analysis'
-					link='/kitui'
-				/>
-				<PortfolioItem
-					image={samburu}
-					title='Business'
-					description='Market Analysis'
-					link='/kitui'
-				/>
-				<PortfolioItem
-					image={samburu}
-					title='Business'
-					description='Market Analysis'
-					link='/kitui'
-				/>
-				<PortfolioItem
-					image={samburu}
-					title='Business'
-					description='Market Analysis'
-					link='/kitui'
+					description='Waste Management'
+					link='/ocheanbays'
 				/>
 			</div>
 		</div>

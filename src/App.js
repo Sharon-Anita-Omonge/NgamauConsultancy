@@ -16,6 +16,8 @@ import QualitySurvey from "./Components/ServiceDetails/QualitySurvey";
 import ScrollToTopButton from "./Components/ScrollToTop/ScrollToTop";
 import Samburu from "./Components/Casestudy/Samburu";
 import Kitui from "./Components/Casestudy/Kitui";
+import Housing from "./Components/Casestudy/Housing";
+import Ocheans from "./Components/Casestudy/Ocheans";
 
 function App() {
 	return (
@@ -39,6 +41,8 @@ function App() {
 				<Route path='/qualitysurvey' element={<QualitySurvey />} />
 				<Route path='/samburu' element={<Samburu />} />
 				<Route path='/kitui' element={<Kitui />} />
+				<Route path='/housing' element={<Housing />} />
+				<Route path='/ocheanbays' element={<Ocheans />} />
 			</Routes>
 			<ScrollToTopButton />
 			<Footer />

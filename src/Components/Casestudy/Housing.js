@@ -1,30 +1,33 @@
 import React from "react";
 import "./CaseStudy.css";
 
-const Kitui = () => {
+const Housing = () => {
 	return (
-		<div className='kitui'>
-			<div className='hero-kitui'>
-				<h1>Kitui Water Project</h1>
+		<div className='housing'>
+			<div className='hero-housing'>
+				<h1>Affordable Housing Project</h1>
 			</div>
 			<div className='case-study container'>
 				<div className='case-study-main'>
 					<h2>About Projects</h2>
 					<p>
-						Ngamau Consultancy Limited has been awarded a crucial tender for the
-						assessment of surface water and groundwater
-						potential/availability/utilization and the preparation of water
-						plans in Kitui County. Our projects in Kitui focus on the
-						sustainable exploitation of natural resources, aiming to enhance the
-						region's water management capabilities.
+						Ngamau Consultancy Limited has been awarded a prestigious framework
+						agreement by the Ministry of Lands, Public Works, Housing, and Urban
+						Development, specifically through the State Department for Housing
+						and Urban Development. This agreement is for the procurement of
+						consultancy services in construction management and project
+						management for affordable housing. Our projects under this framework
+						will focus on delivering expert consultancy services to ensure that
+						affordable housing projects are managed effectively from inception
+						to completion.
 					</p>
 					<div className='case-study-stats'>
 						<div>
-							<h2>1</h2>
+							<h2>-</h2>
 							<p>Project expected duration (yrs)</p>
 						</div>
 						<div>
-							<h2>90+</h2>
+							<h2>20+</h2>
 							<p>Employers working</p>
 						</div>
 						<div>
@@ -33,77 +36,72 @@ const Kitui = () => {
 						</div>
 					</div>
 					<p>
-						Through meticulous planning and coordination, we strive to provide
-						robust water resource assessments and create effective water
-						management plans that align with environmental sustainability goals.
-						Our commitment ensures that we deliver high-quality, impactful
-						projects that benefit the communities and ecosystems in Kitui
-						County.
+						Our goal is to provide high-quality, reliable project management
+						services that contribute to the development of sustainable and
+						affordable housing solutions.
 					</p>
 
 					<div>
 						<h2>Project Goals</h2>
 						<p>
-							During the plan period, Ngamau will promote and support measures
-							towards a clean and sustainable exploitation of natural resources
-							through:
+							Our consultancy services for affordable housing are aimed at
+							achieving the following:
 						</p>
 						<ul>
-							<li>Effective Environmental Planning and Coordination</li>
 							<li>
-								Developed and promotion of waste management practices that
-								protect water resources and the environment.
+								Ensuring timely, cost-effective, and high-quality project
+								delivery through efficient management and coordination.
 							</li>
 							<li>
-								Increased awareness and building capacity within the community
-								for sustainable water and environmental management.
+								Providing comprehensive project management to meticulously plan,
+								execute, and monitor all aspects of affordable housing projects.
 							</li>
 							<li>
-								Supporting tree planting initiatives to enhance forest cover,
-								contributing to better water catchment and conservation.
+								Upholding rigorous quality standards and ensuring compliance
+								with relevant regulations and best practices.
 							</li>
 							<li>
-								Implementing measures to improve resilience to climate change
-								and variability, ensuring sustainable water availability.
+								Integrating sustainable practices into housing projects to
+								enhance environmental performance and long-term viability.
 							</li>
 							<li>
-								ncouraging the use of renewable energy technologies to support
-								sustainable water management practices.
+								Delivering housing solutions that meet community needs and align
+								with broader urban development goals.
 							</li>
 							<li>
-								Focusing on conserving and rehabilitating water catchments to
-								maintain and improve water quality and quantity.
+								Fostering transparency and accountability throughout the project
+								lifecycle to build trust and ensure effective stakeholder
+								engagement.
 							</li>
 							<li>
-								Facilitating investments in the mining sector that adhere to
-								sustainable and environmentally friendly practices.
+								Introducing innovative approaches to address the complexities of
+								affordable housing development and improve overall project
+								outcomes.
 							</li>
 						</ul>
 						<p>
-							Our mission is to improve the livelihoods of Kitui people through
-							environmental management, the provision of varied and reliable
-							sources of affordable energy, and increased levels of mineral
-							investments in a sustainably managed environment. These goals
-							guide our efforts to provide comprehensive and sustainable water
-							management solutions, ensuring that Kitui County can achieve
-							long-term water security and environmental sustainability.
+							Our goal is to advance the development of affordable housing by
+							providing expert consultancy that ensures effective project
+							management, high-quality construction, and sustainable solutions
+							for community benefit.
 						</p>
 					</div>
 				</div>
 				<div className='case-study-sidebar'>
 					<h2>Project Information</h2>
 					<p>
-						<strong>About Project:</strong> Surface and groundwater availability
+						<strong>About Project:</strong>
+						Construction and project management for affordable housing
 					</p>
 					<p>
-						<strong>Client:</strong> Ministry of Environment, Climate Change and
-						Forestry
+						<strong>Client:</strong> Ministry of Lands, Public Works, Housing,
+						and Urban Development
 					</p>
 					<p>
-						<strong>Commencement Date:</strong> 04 - 03 - 2024
+						<strong>Commencement Date:</strong> 29 - 02 - 2024
 					</p>
 					<p>
-						<strong>Location:</strong> Kitui County, Kenya
+						<strong>Location:</strong> Nairobi County, Kenya
 					</p>
 				</div>
 			</div>
@@ -111,4 +109,4 @@ const Kitui = () => {
 	);
 };
 
-export default Kitui;
+export default Housing;
