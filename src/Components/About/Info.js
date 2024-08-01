@@ -1,5 +1,5 @@
 import React from "react";
-import "./InfoItem.css";
+import "./Info.css";
 
 const InfoItem = ({ number, title, description }) => {
 	return (

@@ -1,16 +1,9 @@
 import React, { useState } from "react";
-import {
-	FaPhone,
-	FaEnvelope,
-	FaMapMarkerAlt,
-	FaFacebookF,
-	FaTwitter,
-	FaLinkedinIn,
-	FaGooglePlusG,
-	FaSkype,
-} from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 import axios from "axios";
+import mtito from "../../assets/mtitoandei.jpg";
+import email from "../../assets/bluemail.png";
 import "./Contact.css";
 
 const ContactPage = ({ google }) => {
@@ -56,17 +49,21 @@ const ContactPage = ({ google }) => {
 		<div className='contact-page'>
 			<div className='hero-contact'>
 				<div className='overlay'>
-					<h1>About Us</h1>
+					<h1>Contact Us</h1>
 				</div>
 			</div>
-			<div className='contact-info'>
+			<div className='contact-info container'>
+				<div className='location'>
+					<img src={mtito} alt='' />
+				</div>
 				<div className='contact-map'>
 					<Map
 						google={google}
 						zoom={14}
-						initialCenter={{ lat: 37.7749, lng: -122.4194 }}
+						initialCenter={{ lat: -1.286389, lng: 36.817223 }}
+						containerStyle={{ width: "30%", height: "300px" }}
 					>
-						<Marker position={{ lat: 37.7749, lng: -122.4194 }} />
+						<Marker position={{ lat: -1.286389, lng: 36.817223 }} />
 					</Map>
 				</div>
 				<div className='contact-details'>
@@ -75,75 +72,74 @@ const ContactPage = ({ google }) => {
 						<FaMapMarkerAlt /> 144 Mtito Andei Road, Nairobi, Kenya.
 					</p>
 					<p>
-						<FaPhone /> +1 628 123 4000
+						<FaPhone /> +254 710 466-533
 					</p>
 					<p>
-						<FaEnvelope /> brandon@consulting.com
+						<FaEnvelope /> admin@ngamaulimited.co.ke
 					</p>
-					<div className='contact-social'>
-						<FaFacebookF />
-						<FaTwitter />
-						<FaLinkedinIn />
-						<FaGooglePlusG />
-						<FaSkype />
-					</div>
 				</div>
 			</div>
-			<div className='contact-form-section'>
-				<h2>Feedback form</h2>
+
+			<div className='contact-form-section container'>
 				<form className='contact-form' onSubmit={handleSubmit}>
-					<input
-						type='text'
-						name='firstName'
-						placeholder='First name *'
-						value={formData.firstName}
-						onChange={handleChange}
-						required
-					/>
-					<input
-						type='email'
-						name='email'
-						placeholder='E-mail *'
-						value={formData.email}
-						onChange={handleChange}
-						required
-					/>
-					<input
-						type='tel'
-						name='phone'
-						placeholder='Phone *'
-						value={formData.phone}
-						onChange={handleChange}
-						required
-					/>
-					<textarea
-						name='message'
-						placeholder='Your Message *'
-						value={formData.message}
-						onChange={handleChange}
-						required
-					></textarea>
-					<button type='submit'>Submit</button>
-					{status && <p className='form-status'>{status}</p>}
-				</form>
-				<div className='contact-persons'>
-					<h2>Your contact</h2>
-					<div className='contact-person'>
-						<img src='https://via.placeholder.com/100' alt='Berg Devien' />
-						<p>Berg Devien</p>
-						<p>Head of communications</p>
-						<p>Email: berg@consulting.wp</p>
-						<p>Skype: berg.consulting</p>
-					</div>
-					<div className='contact-person'>
-						<img
-							src='https://via.placeholder.com/100'
-							alt='Priscilla Sorvino'
+					<div>
+						<h2>Feedback form</h2>
+						<input
+							type='text'
+							name='firstName'
+							placeholder='First name *'
+							value={formData.firstName}
+							onChange={handleChange}
+							required
 						/>
-						<p>Priscilla Sorvino</p>
-						<p>Head of communications</p>
-						<p>Email: priscilla@consulting.wp</p>
-						<p>Skype: priscilla.consulting</p>
+						<input
+							type='email'
+							name='email'
+							placeholder='E-mail *'
+							value={formData.email}
+							onChange={handleChange}
+							required
+						/>
+						<input
+							type='tel'
+							name='phone'
+							placeholder='Phone *'
+							value={formData.phone}
+							onChange={handleChange}
+							required
+						/>
+					</div>
+					<div className='text-area'>
+						<textarea
+							name='message'
+							placeholder='Your Message *'
+							value={formData.message}
+							onChange={handleChange}
+							required
+						></textarea>
+						<button type='submit'>Submit</button>
+						{status && <p className='form-status'>{status}</p>}
+					</div>
+				</form>
+				<div>
+					<h2>Your contact</h2>
+					<div className='contact-persons'>
+						<div className='contact-person'>
+							<img src={email} alt='' />
+							<div className='text'>
+								<p>Clarine Aziza</p>
+								<p>Head of communications</p>
+								<p>Email: clarineaziza@ngamaulimited.co.ke</p>
+							</div>
+						</div>
+						<div className='contact-person'>
+							<img src={email} alt='' />
+							<div className='text'>
+								<p>Elvin Leware</p>
+								<p>Head of communications</p>
+								<p>Email: leware@ngamaulimited.co.ke</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

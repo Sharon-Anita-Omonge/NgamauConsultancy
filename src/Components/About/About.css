@@ -28,3 +28,46 @@
 	text-align: center;
 	margin: 0;
 }
+.about-section {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px;
+}
+
+.left-side,
+.right-side {
+	width: 45%;
+}
+
+.left-side h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.left-side h2 span {
+	font-style: italic;
+}
+
+.right-side h2 {
+	font-size: 3rem;
+}
+
+.right-side h2 span {
+	font-weight: normal;
+}
+
+.services {
+	margin-top: 30px;
+}
+
+.service-item {
+	margin-bottom: 20px;
+}
+
+.service-item h3 {
+	font-size: 1.5rem;
+}
+
+.service-item p {
+	font-size: 1rem;
+}
