@@ -19,6 +19,7 @@ import Kitui from "./Components/Casestudy/Kitui";
 import Housing from "./Components/Casestudy/Housing";
 import Ocheans from "./Components/Casestudy/Ocheans";
 import Ksm from "./Components/Casestudy/Ksm";
+import Kalashat from "./Components/Casestudy/Kalashat";
 
 function App() {
 	return (
@@ -45,6 +46,7 @@ function App() {
 				<Route path='/housing' element={<Housing />} />
 				<Route path='/ocheanbays' element={<Ocheans />} />
 				<Route path='/kisumu' element={<Ksm />} />
+				<Route path='/kalashat' element={<Kalashat />} />
 			</Routes>
 			<ScrollToTopButton />
 			<Footer />
