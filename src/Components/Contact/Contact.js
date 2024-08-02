@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import axios from "axios";
 import mtito from "../../assets/mtitoandei.jpg";
 import email from "../../assets/bluemail.png";
 import "./Contact.css";
 
-const ContactPage = ({ google }) => {
+const ContactPage = () => {
 	const [formData, setFormData] = useState({
 		firstName: "",
 		email: "",
@@ -57,14 +57,15 @@ const ContactPage = ({ google }) => {
 					<img src={mtito} alt='' />
 				</div>
 				<div className='contact-map'>
-					<Map
-						google={google}
-						zoom={14}
-						initialCenter={{ lat: -1.286389, lng: 36.817223 }}
-						containerStyle={{ width: "30%", height: "300px" }}
-					>
-						<Marker position={{ lat: -1.286389, lng: 36.817223 }} />
-					</Map>
+					<LoadScript googleMapsApiKey='AIzaSyD3IA3QZPpNHMi74ayyTgcZ5iXgSEKRDCU'>
+						<GoogleMap
+							mapContainerStyle={{ width: "100%", height: "300px" }}
+							center={{ lat: -1.286389, lng: 36.817223 }}
+							zoom={14}
+						>
+							<Marker position={{ lat: -1.286389, lng: 36.817223 }} />
+						</GoogleMap>
+					</LoadScript>
 				</div>
 				<div className='contact-details'>
 					<h2>Contact details</h2>
@@ -147,6 +148,4 @@ const ContactPage = ({ google }) => {
 	);
 };
 
-export default GoogleApiWrapper({
-	apiKey: "AIzaSyD3IA3QZPpNHMi74ayyTgcZ5iXgSEKRDCU",
-})(ContactPage);
+export default ContactPage;
