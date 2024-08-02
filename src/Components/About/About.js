@@ -70,6 +70,7 @@ const About = () => {
 						</div>
 					</div>
 				</div>
+				<div className='choose-us'></div>
 				<div className='testimonials'>
 					<TestimonialSection />
 				</div>
