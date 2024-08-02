@@ -1,62 +1,106 @@
 .testimonial-section {
 	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 	padding: 50px;
-	background-color: #f8f9fa; /* Optional, for better visuals */
 }
 
 .left-side {
-	flex: 1;
-	padding-right: 50px;
+	width: 35%;
 }
 
 .left-side h2 {
-	font-size: 3rem;
-	margin-bottom: 20px;
-}
-
-.left-side p {
-	font-size: 1.2rem;
+	font-size: 2rem;
 	margin-bottom: 10px;
 }
 
+.left-side span {
+	font-weight: normal;
+	display: block;
+}
+
+.left-side p {
+	font-size: 1rem;
+	color: #555;
+}
+
 .right-side {
-	flex: 2;
+	width: 70%;
 	position: relative;
+	overflow: hidden;
+}
+
+.testimonial-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: start;
+	margin-bottom: 20px;
+	box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px 40px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	transition: transform 0.5s ease-in-out;
+	height: 400px;
+}
+
+.testimonial-content h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.testimonial-content p {
+	font-size: 1rem;
+	color: var(--blue);
+	border-top: 1px solid #c1c1c1;
+	padding: 10px 0;
+}
+
+.testimonial-content.next {
+	transform: translateX(100%);
+	animation: slideInFromLeft 0.5s forwards;
+}
+
+.testimonial-content.prev {
+	transform: translateX(-100%);
+	animation: slideInFromRight 0.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.testimonial-navigation {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.testimonial-navigation button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 1.2rem;
+	border: 1px solid var(--blue);
+	padding: 10px 30px;
+	border-radius: 50px;
+	color: var(--blue);
 	display: flex;
 	align-items: center;
-	justify-content: center;
-}
-
-.arrow {
-	font-size: 2rem;
-	cursor: pointer;
-	padding: 10px;
-	user-select: none;
-	z-index: 10;
-}
-
-.left-arrow {
-	position: absolute;
-	left: 0;
-}
-
-.right-arrow {
-	position: absolute;
-	right: 0;
-}
-
-.testimonials {
-	display: flex;
-	overflow: hidden;
-	width: 80%;
-}
-
-.testimonial-item {
-	min-width: 100%;
-	transition: transform 0.5s ease-in-out;
-	display: none;
-}
-
-.testimonial-item.active {
-	display: block;
 }

@@ -1,72 +1,64 @@
 import React, { useState } from "react";
 import "./Testimonials.css";
-import TestimonialItem from "./TestItem";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
+const testimonials = [
+	{
+		id: 1,
+		text: "Ngamau Consultancy Limited has been an exceptional partner in our recent project. Their expertise in project management and their thorough understanding of our needs were evident throughout the engagement. The team provided insightful recommendations and delivered results that exceeded our expectations. I highly recommend their services to anyone seeking reliable and professional consultancy.",
+		author: "Akinyi Violet, CEO of Ocheanbays ",
+	},
+	{
+		id: 2,
+		text: "Working with Ngamau Consultancy Limited has been a game-changer for our construction projects. Their comprehensive approach and attention to detail ensured that every aspect of our projects was meticulously managed. Their ability to navigate complex challenges and provide practical solutions has greatly contributed to our success. I look forward to continued collaboration with their team.",
+		author: "Lenard Kinyajui, Manager of Kalashat",
+	},
+	{
+		id: 3,
+		text: "Ngamau Consultancy Limited has demonstrated exceptional competence in their work with the Ministry of Environment. Their thorough analysis and strategic recommendations have been invaluable in our environmental projects. Their professionalism and commitment to delivering high-quality results are commendable. I am confident in their ability to tackle any consultancy challenge with expertise and dedication.",
+		author: "Tabitha Lwanga, Ministry of Environment",
+	},
+];
 
 const TestimonialSection = () => {
 	const [currentIndex, setCurrentIndex] = useState(0);
+	const [direction, setDirection] = useState("next");
 
-	const testimonials = [
-		{
-			quote:
-				"Gurus’s digital marketing strategies have helped us reach new customers and expand our business. They are results-driven and always go the extra mile to deliver outstanding results.",
-			author: "Melisa Scarlet",
-			position: "CEO of Asana Pro Ltd.",
-		},
-		{
-			quote:
-				"Gurus’s expertise in data analysis has been invaluable. Their insights have enabled us to make informed decisions that have significantly improved our operations.",
-			author: "John Smith",
-			position: "CEO of Zendex Inc.",
-		},
-		// Add more testimonials as needed
-	];
-
-	const nextTestimonial = () => {
-		setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+	const handleNext = () => {
+		setDirection("next");
+		setCurrentIndex((prevIndex) =>
+			prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+		);
 	};
 
-	const prevTestimonial = () => {
-		setCurrentIndex(
-			(prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+	const handlePrev = () => {
+		setDirection("prev");
+		setCurrentIndex((prevIndex) =>
+			prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
 		);
 	};
 
 	return (
 		<div className='testimonial-section'>
 			<div className='left-side'>
+				<h5>CLIENTS TESTIMONIALS</h5>
 				<h2>
-					25k+ <br /> CUSTOMERS ARE SERVED
+					<span style={{ fontSize: "10rem" }}> 10K+ </span> Customers are served
 				</h2>
-				<p>Words by our Amazing Clients</p>
-				<p>
-					Gurus offers a full range of consultancy and training for data
-					consultation strategies.
-				</p>
+				<p>Words by our amazing clients</p>
 			</div>
-
 			<div className='right-side'>
-				<div className='arrow left-arrow' onClick={prevTestimonial}>
-					<FaArrowLeft />
+				<div className={`testimonial-content ${direction}`}>
+					<h2>{testimonials[currentIndex].text}</h2>
+					<p>- {testimonials[currentIndex].author}</p>
 				</div>
-				<div className='testimonials'>
-					{testimonials.map((testimonial, index) => (
-						<div
-							key={index}
-							className={`testimonial-item ${
-								index === currentIndex ? "active" : ""
-							}`}
-						>
-							<TestimonialItem
-								quote={testimonial.quote}
-								author={testimonial.author}
-								position={testimonial.position}
-							/>
-						</div>
-					))}
-				</div>
-				<div className='arrow right-arrow' onClick={nextTestimonial}>
-					<FaArrowRight />
+				<div className='testimonial-navigation'>
+					<button onClick={handlePrev}>
+						<FaArrowLeft />
+					</button>
+					<button onClick={handleNext}>
+						<FaArrowRight />
+					</button>
 				</div>
 			</div>
 		</div>
