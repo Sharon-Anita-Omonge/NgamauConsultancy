@@ -1,7 +1,9 @@
 import React from "react";
 import "./About.css";
 import InfoItem from "./Info";
+import arrowup from "../../assets/arrowblack.png";
 import TestimonialSection from "./Testimonials";
+import { Link } from "react-router-dom";
 
 const About = () => {
 	return (
@@ -12,6 +14,32 @@ const About = () => {
 				</div>
 			</div>
 			<div className='about-section'>
+				<div className='abt-top'>
+					<div className='top-left'>
+						<h2>
+							<i style={{ fontWeight: "700" }}>
+								We Built trust in our customer’s mind
+							</i>{" "}
+							through creativity & market analytics
+						</h2>
+					</div>
+					<div className='top-right'>
+						<p>
+							Ngamau Consultancy Limited offers a comprehensive suite of
+							consultancy and training services, including data analysis,
+							business consultation, and strategic planning. We provide valuable
+							opportunities for new ventures to thrive and achieve their goals.
+							Our expert team delivers tailored solutions to address your unique
+							business challenges and drive success.
+						</p>
+						<Link to='/services' className='nav-link'>
+							<button className='btn but'>
+								View More
+								<img src={arrowup} alt='' />
+							</button>
+						</Link>
+					</div>
+				</div>
 				<div className='content'>
 					<div className='left-side'>
 						<h2>
