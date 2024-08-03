@@ -62,8 +62,7 @@ const HomeAbout = () => {
 					onClick={() => handleSectionClick("Company Growth Objective")}
 				>
 					<p>
-						Sure, here is a business objective for Ngamau: --- ### Business
-						Objective At Ngamau, our primary objective is to provide
+						Business Objective At Ngamau, our primary objective is to provide
 						comprehensive consultancy services that cater to the diverse needs
 						of our clients across various sectors, including engineering and
 						agriculture. We aim to deliver innovative solutions that enhance
