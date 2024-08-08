@@ -1,8 +1,9 @@
 .testimonial-section {
 	display: flex;
-	justify-content: space-between;
+	flex: 1;
 	align-items: flex-start;
-	padding: 50px;
+	flex-wrap: wrap;
+	margin-top: 10%;
 }
 
 .left-side {
@@ -25,7 +26,7 @@
 }
 
 .right-side {
-	width: 70%;
+	flex: 2;
 	position: relative;
 	overflow: hidden;
 }

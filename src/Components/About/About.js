@@ -4,6 +4,7 @@ import arrowup from "../../assets/arrowblack.png";
 import TestimonialSection from "./Testimonials";
 import { Link } from "react-router-dom";
 import ExperienceSection from "./ExperienceSection";
+import AnimatedSection from "./AnimatedSection";
 
 const About = () => {
 	return (
@@ -40,10 +41,13 @@ const About = () => {
 						</Link>
 					</div>
 				</div>
-				<div className='experinece'>
+				<div>
 					<ExperienceSection />
 				</div>
-				<div className='testimonials'>
+				<div>
+					<AnimatedSection />
+				</div>
+				<div>
 					<TestimonialSection />
 				</div>
 			</div>
