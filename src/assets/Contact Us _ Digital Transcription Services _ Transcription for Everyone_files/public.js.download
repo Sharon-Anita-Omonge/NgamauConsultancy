@@ -1,0 +1,23 @@
+/** When the DOM is Ready **/
+$(document).ready(function(){
+
+    /** Header Languages **/
+    $("#hLanguages select").change(function() {
+        if ($(this).val().length > 0) {
+            document.location.href = $(this).val();
+        }
+    });
+
+    /** Client Testimonials **/
+    $("#testimonialsContainer").cycle({
+        fx:            'scrollHorz',
+        pause:         true,
+        next:          '.rightArrow',
+        prev:          '.leftArrow',
+        speed:         1200,
+        startingSlide: 0,
+        sync:          1,
+        timeout:       5000
+    });
+
+});

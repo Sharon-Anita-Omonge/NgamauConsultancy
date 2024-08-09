@@ -54,7 +54,7 @@ const Home = () => {
 	};
 
 	return (
-		<>
+		<div className='home'>
 			<div>
 				<Hero />
 			</div>
@@ -167,7 +167,7 @@ const Home = () => {
 			<div className='margin-div'>
 				<RequestCallback />
 			</div>
-		</>
+		</div>
 	);
 };
 

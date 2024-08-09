@@ -1,3 +1,6 @@
+.home {
+	overflow-x: hidden;
+}
 .hero-home {
 	text-align: center;
 }
@@ -188,4 +191,109 @@ form {
 	color: var(--yellow);
 	font-size: 16px;
 	margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+	.services-list {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.list-left,
+	.list-right {
+		width: 100%;
+	}
+	#list2 {
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	#list3 {
+		margin-top: 5px;
+	}
+	.list-right img {
+		width: 50%;
+		padding: 20px;
+		object-fit: cover;
+		border-radius: 20px;
+	}
+}
+
+@media (max-width: 860px) {
+	.home-form {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.services-list {
+		width: 100%;
+	}
+
+	.list-left,
+	.list-right {
+		width: 100%;
+	}
+
+	.choose-home {
+		flex-direction: column-reverse;
+		margin-top: 5%;
+	}
+
+	.choose-right {
+		height: 50vh;
+		padding: 1rem;
+	}
+	.choose-right h5 {
+		margin-top: -30%;
+	}
+	.choose-left img {
+		height: 50vh;
+		width: 100vw;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 480px) {
+	.form-group {
+		width: 90%;
+		margin: 0.5rem 0;
+	}
+
+	.btn {
+		width: 90%;
+	}
+
+	.choose-left img {
+		width: 100%;
+	}
+
+	.choose-right {
+		padding: 1rem;
+	}
+
+	.choose-home {
+		flex-direction: column-reverse; /* Maintain the order change for smaller screens */
+	}
+}
+
+@media (max-width: 320px) {
+	.form-group {
+		width: 100%;
+		margin: 0.5rem 0;
+	}
+
+	.btn {
+		width: 100%;
+	}
+
+	.choose-right {
+		padding: 0.5rem;
+	}
+
+	.context-right {
+		margin-top: 1rem;
+	}
+
+	.choose-home {
+		flex-direction: column-reverse; /* Maintain the order change for smaller screens */
+	}
 }

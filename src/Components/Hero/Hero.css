@@ -52,3 +52,45 @@
 	word-wrap: break-word;
 	line-height: 1.2;
 }
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+	.hero {
+		height: 80vh;
+	}
+	.caption {
+		font-size: 2rem;
+		max-width: 70%;
+	}
+}
+
+@media (max-width: 860px) {
+	.hero {
+		height: 70vh;
+	}
+	.caption {
+		font-size: 1.8rem;
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero {
+		height: 60vh;
+	}
+	.caption {
+		font-size: 1.5rem;
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 320px) {
+	.hero {
+		height: 50vh;
+	}
+	.caption {
+		font-size: 1.2rem;
+		max-width: 100%;
+	}
+}
