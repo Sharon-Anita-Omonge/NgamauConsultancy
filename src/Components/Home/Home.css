@@ -192,7 +192,8 @@ form {
 	font-size: 16px;
 	margin-bottom: 10px;
 }
-@media (max-width: 1024px) {
+/* Media Query for screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 	.services-list {
 		flex-direction: column;
 		align-items: center;
@@ -218,19 +219,30 @@ form {
 	}
 }
 
-@media (max-width: 860px) {
-	.home-form {
-		flex-direction: column;
-		width: 100%;
-	}
-
+/* Media Query for screens between 481px and 767px */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
 	.services-list {
+		flex-direction: column;
+		align-items: center;
 		width: 100%;
 	}
 
 	.list-left,
 	.list-right {
 		width: 100%;
+	}
+	#list2 {
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	#list3 {
+		margin-top: 5px;
+	}
+	.list-right img {
+		width: 50%;
+		padding: 20px;
+		object-fit: cover;
+		border-radius: 20px;
 	}
 
 	.choose-home {
@@ -243,7 +255,7 @@ form {
 		padding: 1rem;
 	}
 	.choose-right h5 {
-		margin-top: -30%;
+		margin-top: -35%;
 	}
 	.choose-left img {
 		height: 50vh;
@@ -252,7 +264,9 @@ form {
 	}
 }
 
-@media (max-width: 480px) {
+/* Media Query for screens between 320px and 480px */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	/* Add your CSS rules for small mobile devices here */
 	.form-group {
 		width: 90%;
 		margin: 0.5rem 0;
@@ -260,10 +274,6 @@ form {
 
 	.btn {
 		width: 90%;
-	}
-
-	.choose-left img {
-		width: 100%;
 	}
 
 	.choose-right {
@@ -271,29 +281,6 @@ form {
 	}
 
 	.choose-home {
-		flex-direction: column-reverse; /* Maintain the order change for smaller screens */
-	}
-}
-
-@media (max-width: 320px) {
-	.form-group {
-		width: 100%;
-		margin: 0.5rem 0;
-	}
-
-	.btn {
-		width: 100%;
-	}
-
-	.choose-right {
-		padding: 0.5rem;
-	}
-
-	.context-right {
-		margin-top: 1rem;
-	}
-
-	.choose-home {
-		flex-direction: column-reverse; /* Maintain the order change for smaller screens */
+		flex-direction: column-reverse;
 	}
 }
