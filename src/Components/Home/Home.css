@@ -59,9 +59,11 @@ form {
 .nav-link {
 	text-decoration: none;
 }
-
+.arrowblack {
+	width: 14px;
+	margin-left: 5px;
+}
 .btn.button img.arrow-up {
-	border: none;
 	outline: none;
 	margin: 0;
 	padding: 0;
@@ -174,7 +176,7 @@ form {
 	margin-left: 20px;
 }
 .callback-right input {
-	width: 95%;
+	width: 93%;
 	padding: 10px;
 	margin-bottom: 10px;
 	border-radius: 5px;
@@ -220,7 +222,20 @@ form {
 }
 
 /* Media Query for screens between 481px and 767px */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.home-form {
+		flex-direction: column;
+	}
+	form {
+		flex-direction: column;
+	}
+	.form-group {
+		margin: 1rem;
+		background-color: #fff;
+		padding: 0.5rem;
+		width: 80vw;
+	}
+
 	.services-list {
 		flex-direction: column;
 		align-items: center;
@@ -229,7 +244,7 @@ form {
 
 	.list-left,
 	.list-right {
-		width: 100%;
+		width: 90%;
 	}
 	#list2 {
 		margin-top: 5px;
@@ -239,7 +254,7 @@ form {
 		margin-top: 5px;
 	}
 	.list-right img {
-		width: 50%;
+		width: 70%;
 		padding: 20px;
 		object-fit: cover;
 		border-radius: 20px;
@@ -251,7 +266,7 @@ form {
 	}
 
 	.choose-right {
-		height: 50vh;
+		height: 70vh;
 		padding: 1rem;
 	}
 	.choose-right h5 {
@@ -262,25 +277,35 @@ form {
 		width: 100vw;
 		object-fit: cover;
 	}
-}
-
-/* Media Query for screens between 320px and 480px */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-	/* Add your CSS rules for small mobile devices here */
-	.form-group {
-		width: 90%;
-		margin: 0.5rem 0;
+	.callback {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem;
 	}
 
-	.btn {
-		width: 90%;
+	.main-callback {
+		height: 90vh;
+	}
+	.callback-left {
+		margin-right: 20px;
+	}
+	.callback-right {
+		margin-left: -17px;
+	}
+	.home-about {
+		flex-direction: column;
+	}
+	.about-right {
+		margin-left: 0;
+		padding-right: 20px;
+	}
+	.header h4 {
+		margin-right: 20px;
 	}
 
-	.choose-right {
-		padding: 1rem;
-	}
-
-	.choose-home {
-		flex-direction: column-reverse;
+	.content {
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
 	}
 }

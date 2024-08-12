@@ -47,13 +47,27 @@ h5 {
 	font-size: 16px;
 	text-decoration: none;
 }
+.special-btn {
+	display: flex;
+	align-items: center;
+	padding: 1rem 2rem;
+	background-color: transparent;
+	border: 1px solid #000;
+	color: #000;
+	font-weight: 600;
+	border-radius: 30px;
+	text-transform: capitalize;
+	font-size: 16px;
+	text-decoration: none;
+}
 
 .arrow-up {
 	width: 20px;
 	margin-left: 10px;
 }
 
-.btn:hover {
+.btn:hover,
+.special-btn:hover {
 	cursor: pointer;
 	background-color: var(--yellow2);
 	border: none;

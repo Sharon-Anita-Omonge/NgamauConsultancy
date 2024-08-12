@@ -7,6 +7,7 @@ import listpic3 from "../../assets/listpic3.jpg";
 import listpic2 from "../../assets/listpic2.jpg";
 import listpic4 from "../../assets/listpic4.jpg";
 import arrowup from "../../assets/arrow-up.png";
+import arrowupblack from "../../assets/arrowblack.png";
 import image1 from "../../assets/image1.jpg";
 import { Link } from "react-router-dom";
 import HomeAbout from "./HomeCollapsable";
@@ -126,9 +127,9 @@ const Home = () => {
 						</ul>
 					</div>
 					<Link to='/services' className='nav-link'>
-						<button className='btn button' type='button'>
+						<button className='special-btn' type='button'>
 							View more
-							<img src={arrowup} alt='arrow up' className='arrow-up' />
+							<img src={arrowupblack} alt='arrow up' className='arrowblack' />
 						</button>
 					</Link>
 				</div>
