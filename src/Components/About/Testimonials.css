@@ -18,6 +18,7 @@
 .left-side span {
 	font-weight: normal;
 	display: block;
+	font-size: 10rem;
 }
 
 .left-side p {
@@ -28,7 +29,6 @@
 .right-side {
 	flex: 2;
 	position: relative;
-	overflow: hidden;
 }
 
 .testimonial-content {
@@ -37,7 +37,8 @@
 	align-items: center;
 	text-align: start;
 	margin-bottom: 20px;
-	box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 -3em 3em rgb(0 0 0 / 30%), 0 0 0 2px white,
+		0.3em 0.3em 1em rgb(0 0 0 / 60%);
 	padding: 20px 40px;
 	border-radius: 10px;
 	border: 1px solid #ddd;
@@ -55,7 +56,7 @@
 .testimonial-content p {
 	font-size: 1rem;
 	color: var(--blue);
-	border-top: 1px solid #c1c1c1;
+	border-top: 1px solid #000;
 	padding: 10px 0;
 }
 
@@ -104,4 +105,38 @@
 	color: var(--blue);
 	display: flex;
 	align-items: center;
+}
+@media only screen and (min-width: 939px) and (max-width: 1024px) {
+	.testimonial-content {
+		height: 500px;
+		margin-left: 40px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 938px) {
+	.testimonial-section {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.testimonial-content {
+		height: auto;
+		padding: 0 20px;
+		width: 70vw;
+	}
+	.right-side {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.left-side h2 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	.left-side span {
+		font-size: 8rem;
+	}
+	.left-side {
+		width: 100%;
+	}
 }

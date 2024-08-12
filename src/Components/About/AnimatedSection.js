@@ -9,9 +9,9 @@ import technology from "../../assets/research-paper.png";
 const AnimatedSection = () => {
 	return (
 		<div className='main-animatedsection'>
-			<div>
+			<div className='choose-animated'>
 				<h5> why choose us</h5>
-				<h2 style={{ fontSize: "2.5rem" }}>
+				<h2>
 					Our skills are the main reasons why <br />
 					<strong>
 						<i>clients choose us</i>

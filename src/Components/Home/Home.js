@@ -129,7 +129,7 @@ const Home = () => {
 					<Link to='/services' className='nav-link'>
 						<button className='special-btn' type='button'>
 							View more
-							<img src={arrowupblack} alt='arrow up' className='arrowblack' />
+							<img src={arrowupblack} alt='arrow up' />
 						</button>
 					</Link>
 				</div>

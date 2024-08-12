@@ -6,7 +6,7 @@ const ExperienceSection = () => {
 		<div className='experience-section'>
 			<div className='experience-list'>
 				<h5>About company</h5>
-				<h2 style={{ fontSize: "2.5rem" }}>
+				<h2>
 					We are building great future Together,{" "}
 					<strong>
 						<i>Build with us</i>{" "}

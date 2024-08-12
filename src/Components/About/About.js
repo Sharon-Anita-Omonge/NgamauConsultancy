@@ -34,7 +34,7 @@ const About = () => {
 							business challenges and drive success.
 						</p>
 						<Link to='/services' className='nav-link'>
-							<button className='btn but'>
+							<button className='btn special-btn'>
 								View More
 								<img src={arrowup} alt='' />
 							</button>

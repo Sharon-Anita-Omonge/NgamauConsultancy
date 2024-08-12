@@ -43,7 +43,7 @@ const TestimonialSection = () => {
 			<div className='left-side'>
 				<h5>CLIENTS TESTIMONIALS</h5>
 				<h2>
-					<span style={{ fontSize: "10rem" }}> 10K+ </span> Customers are served
+					<span> 10K+ </span> Customers are served
 				</h2>
 				<p>Words by our amazing clients</p>
 			</div>

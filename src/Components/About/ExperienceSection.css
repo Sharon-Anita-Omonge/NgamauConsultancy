@@ -13,11 +13,15 @@
 	flex-direction: column;
 	position: relative;
 	margin-right: 20px;
+	margin-top: -25px;
 }
-
+.experience-list h2 {
+	font-size: 2.5rem;
+}
 .experience-item {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	position: relative;
 }
 
@@ -45,7 +49,7 @@
 .experience-list::before {
 	content: "";
 	position: absolute;
-	top: 20rem; /* Adjust the top position to create space above the first number */
+	top: 20rem;
 	bottom: 1rem;
 	left: 1rem;
 	width: 0;
@@ -58,8 +62,8 @@
 	max-width: 400px;
 	text-align: left;
 	position: relative;
-	z-index: 2; /* Ensure the summary has a higher z-index */
-	background-color: #fff; /* Add background color to ensure readability */
+	z-index: 2;
+	background-color: #fff;
 	padding: 1rem;
 	border: dotted;
 }
@@ -82,4 +86,43 @@
 
 .experience-summary p {
 	margin-top: 1rem;
+}
+/*Media Query*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.experience-list::before {
+		top: 23rem;
+	}
+	.experience-summary {
+		margin-top: 6%;
+	}
+	.experience-item .content {
+		margin-top: 15%;
+	}
+}
+@media only screen and (min-width: 380px) and (max-width: 767px) {
+	.experience-section {
+		flex-direction: column;
+	}
+	.experience-summary {
+		margin-top: 20px;
+		max-width: 90vw;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 379px) {
+	.experience-summary {
+		margin-top: 20px;
+		max-width: 70vw;
+	}
+	.experience-list h2 {
+		font-size: 1.5rem;
+	}
+	.experience-list::before {
+		top: 17rem;
+	}
+	.experience-summary h1 {
+		font-size: 8rem;
+	}
+	.experience-summary h2 {
+		font-size: 1.2rem;
+	}
 }

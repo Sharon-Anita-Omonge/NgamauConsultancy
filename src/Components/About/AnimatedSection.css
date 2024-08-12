@@ -1,6 +1,9 @@
 .main-animatedsection {
 	text-align: center;
 }
+.choose-animated h2 {
+	font-size: 2.5rem;
+}
 .animated-section {
 	display: flex;
 	justify-content: space-around;
@@ -50,5 +53,31 @@
 	}
 	50% {
 		transform: translateY(-20px);
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.animated-image {
+		width: 300px;
+	}
+}
+@media only screen and (min-width: 430px) and (max-width: 767px) {
+	.animated-section {
+		flex-direction: column;
+	}
+	.animated-image {
+		padding: 20px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 429px) {
+	.animated-section {
+		flex-direction: column;
+	}
+	.animated-image {
+		padding: 20px;
+		width: 270px;
+		height: 400px;
+	}
+	.choose-animated h2 {
+		font-size: 1.9rem;
 	}
 }
