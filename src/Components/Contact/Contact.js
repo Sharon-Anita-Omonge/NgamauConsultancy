@@ -76,7 +76,7 @@ const ContactPage = () => {
 						<FaPhone /> +254 710 466-533
 					</p>
 					<p>
-						<FaEnvelope /> admin@ngamaulimited.co.ke
+						<FaEnvelope /> admin@ngamaulimited.com
 					</p>
 				</div>
 			</div>
@@ -130,7 +130,7 @@ const ContactPage = () => {
 							<div className='text'>
 								<p>Clarine Aziza</p>
 								<p>Head of communications</p>
-								<p>Email: clarineaziza@ngamaulimited.co.ke</p>
+								<p>Email: clarineaziza@ngamaulimited.com</p>
 							</div>
 						</div>
 						<div className='contact-person'>
@@ -138,7 +138,7 @@ const ContactPage = () => {
 							<div className='text'>
 								<p>Elvin Leware</p>
 								<p>Head of communications</p>
-								<p>Email: leware@ngamaulimited.co.ke</p>
+								<p>Email: leware@ngamaulimited.com</p>
 							</div>
 						</div>
 					</div>

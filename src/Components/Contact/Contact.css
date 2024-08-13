@@ -1,3 +1,6 @@
+.contact-page {
+	overflow-x: hidden;
+}
 .hero-contact {
 	position: relative;
 	width: 100%;
@@ -35,17 +38,17 @@
 	align-items: center;
 	margin-top: 5%;
 	width: 96%;
-	max-height: 100%;
+	min-height: 300px;
 }
-.contact-map {
+
+.contact-map,
+.location,
+.contact-details {
 	width: 30%;
 	height: 300px;
+	margin: 10px;
 }
-.location {
-	height: 300px;
-	width: 30%;
-	object-fit: cover;
-}
+
 .location img {
 	height: 100%;
 	width: 100%;
@@ -56,22 +59,18 @@
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	width: 30%;
-	height: 300px;
 	background: var(--blue2);
 	color: #fff;
 }
 .contact-details p,
 .contact-details h2 {
-	margin: 20px 0;
-	padding: 0 20px;
+	margin: 20px;
 }
 
 .contact-form-section {
 	text-align: center;
 	margin-top: 5%;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	justify-content: flex-start;
 	width: 96%;
@@ -135,7 +134,8 @@
 	margin: 20px 0;
 	text-align: left;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: flex-start;
 	cursor: pointer;
 }
 .contact-person img {
@@ -145,5 +145,90 @@
 	object-fit: cover;
 }
 .contact-person p {
-	margin: 5px 0;
+	margin: 2px 0;
+}
+/* Media Query*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.contact-form-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.contact-form {
+		width: 45%;
+	}
+	.contact-persons {
+		width: 50%;
+		margin-top: -10px;
+	}
+	.contact-person img {
+		width: 70px;
+		height: 70px;
+		object-fit: cover;
+	}
+	.contact-person {
+		margin: 10px 0;
+	}
+	.text-area {
+		margin-top: 0;
+	}
+	.contact-person p {
+		margin: 0 5px;
+		font-size: 15px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.contact-form-section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contact-form-section div h2 {
+		text-align: start;
+	}
+	.text-area {
+		margin-top: 0;
+	}
+
+	.contact-person img {
+		margin-right: 0;
+		width: 70px;
+		height: 70px;
+		object-fit: cover;
+	}
+	.contact-person p {
+		margin: 0 5px;
+		font-size: 14px;
+	}
+
+	.contact-info {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.contact-map,
+	.location,
+	.contact-details {
+		width: 80%;
+		height: 290px;
+		margin: 20px;
+		object-fit: cover;
+	}
+	.contact-form input,
+	.contact-form textarea {
+		width: 60vw;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 469px) {
+	.contact-person img {
+		margin-right: 0;
+		width: 50px;
+		height: 50px;
+		object-fit: cover;
+	}
+	.contact-person p {
+		margin: 0 5px;
+		font-size: 11px;
+	}
 }
