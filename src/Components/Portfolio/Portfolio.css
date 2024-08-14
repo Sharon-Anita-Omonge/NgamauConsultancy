@@ -37,20 +37,20 @@
 	margin-top: 5%;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px; /* Adjust spacing as needed */
+	gap: 20px;
 }
 
 .portfolio-item {
 	position: relative;
 	width: 30%; /* Adjust width for different screen sizes */
 	margin-bottom: 20px;
-	overflow: hidden; /* Ensure hover effect is contained */
+	overflow: hidden;
 }
 
 .portfolio-image {
 	width: 100%;
 	object-fit: cover;
-	height: 70vh; /* Adjust height as needed */
+	height: 70vh;
 }
 
 .overlay-portfolio {
@@ -86,4 +86,68 @@
 .arrow-icon {
 	width: 80px;
 	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 440px) and (max-width: 1024px) {
+	.portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.portfolio-item {
+		position: relative;
+		width: 45%;
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+
+	.portfolio-image {
+		width: 100%;
+		object-fit: cover;
+		height: 45vh;
+	}
+	.arrow-icon {
+		width: 50px;
+		margin-bottom: 20px;
+	}
+	.text-container h3 {
+		font-size: 13px;
+		margin-bottom: -5%;
+		padding-bottom: 10px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 439px) {
+	.portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.portfolio-item {
+		width: 70%;
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+
+	.portfolio-image {
+		width: 100%;
+		object-fit: cover;
+		height: 45vh;
+	}
+	.arrow-icon {
+		width: 50px;
+		margin-bottom: 20px;
+	}
+	.text-container h3 {
+		font-size: 13px;
+		margin-bottom: -5%;
+	}
+	.text-container p {
+		font-size: 12px;
+	}
 }
