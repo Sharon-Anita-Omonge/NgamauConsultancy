@@ -13,13 +13,13 @@ import Architecture from "./Components/ServiceDetails/Architecture";
 import Engineering from "./Components/ServiceDetails/Engineering";
 import ProjectManagement from "./Components/ServiceDetails/ProjectManagement";
 import QualitySurvey from "./Components/ServiceDetails/QualitySurvey";
-import ScrollToTopButton from "./Components/ScrollToTop/ScrollToTop";
 import Samburu from "./Components/Casestudy/Samburu";
 import Kitui from "./Components/Casestudy/Kitui";
 import Housing from "./Components/Casestudy/Housing";
 import Ocheans from "./Components/Casestudy/Ocheans";
 import Ksm from "./Components/Casestudy/Ksm";
 import Kalashat from "./Components/Casestudy/Kalashat";
+import ScrollToTopButton from "./Components/ScrollToTop/ScrollToTopButton";
 
 function App() {
 	return (
