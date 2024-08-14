@@ -1,39 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { FaArrowUp } from "react-icons/fa";
-import "./ScrollToTop.css";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-const ScrollToTopButton = () => {
-	const [isVisible, setIsVisible] = useState(false);
+const ScrollToTop = () => {
+	const { pathname } = useLocation();
 
 	useEffect(() => {
-		const toggleVisibility = () => {
-			if (window.pageYOffset > 300) {
-				setIsVisible(true);
-			} else {
-				setIsVisible(false);
-			}
-		};
+		window.scrollTo(0, 0); // Scroll to the top of the page
+	}, [pathname]); // Trigger when pathname changes
 
-		window.addEventListener("scroll", toggleVisibility);
-
-		return () => window.removeEventListener("scroll", toggleVisibility);
-	}, []);
-
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
-
-	return (
-		<div
-			className={`scroll-to-top ${isVisible ? "visible" : ""}`}
-			onClick={scrollToTop}
-		>
-			<FaArrowUp />
-		</div>
-	);
+	return null;
 };
 
-export default ScrollToTopButton;
+export default ScrollToTop;
