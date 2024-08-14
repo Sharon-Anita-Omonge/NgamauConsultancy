@@ -11,6 +11,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .humanresource-hero {
 	position: relative;
@@ -25,6 +26,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .informationtechnology-hero {
 	position: relative;
@@ -53,6 +55,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .engineering-hero {
 	position: relative;
@@ -67,6 +70,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .qualitysurvey-hero {
 	position: relative;
@@ -81,6 +85,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .architecture-hero {
 	position: relative;
@@ -95,6 +100,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .details-text {
@@ -157,17 +163,15 @@
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
 	.details {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		padding-left: 10%;
-	}
-
-	.details-text {
-		order: 1;
-	}
-	.details-list {
-		order: 2;
 	}
 	.sidebar {
 		margin-top: 20%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 440px) {
+	.sidebar ul li {
+		font-size: 13px;
 	}
 }

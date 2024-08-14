@@ -120,12 +120,19 @@ p {
 		font-size: 1rem;
 	}
 	h4 {
-		font-size: 0.8;
+		font-size: 0.8rem;
 	}
 	h5 {
 		font-size: 0.7rem;
 	}
 	.btn {
 		padding: 0.8rem;
+	}
+	p {
+		line-height: 1.1;
+		font-size: 13px;
+	}
+	.btn {
+		padding: 0.5rem;
 	}
 }
