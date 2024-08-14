@@ -41,7 +41,7 @@ const Kitui = () => {
 						County.
 					</p>
 
-					<div>
+					<div className='case-study-list'>
 						<h2>Project Goals</h2>
 						<p>
 							During the plan period, Ngamau will promote and support measures

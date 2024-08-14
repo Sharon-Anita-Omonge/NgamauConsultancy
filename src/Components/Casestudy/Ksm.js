@@ -41,7 +41,7 @@ const Ksm = () => {
 						lighting systems.
 					</p>
 
-					<div>
+					<div className='case-study-list'>
 						<h2>Project Goals</h2>
 
 						<ul>

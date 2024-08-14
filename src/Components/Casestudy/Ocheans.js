@@ -34,7 +34,7 @@ const Ocheans = () => {
 						</div>
 					</div>
 
-					<div>
+					<div className='case-study-list'>
 						<h2>Project Goals</h2>
 						<p>Our team provided a wide range of services including:</p>
 						<ul>

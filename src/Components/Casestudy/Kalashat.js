@@ -38,7 +38,7 @@ const Kalashat = () => {
 						upgraded and rehabilitated to the designed standards.
 					</p>
 
-					<div>
+					<div className='case-study-list'>
 						<h2>Project Goals</h2>
 
 						<ul>

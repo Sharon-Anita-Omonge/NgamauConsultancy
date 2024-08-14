@@ -1,7 +1,19 @@
 .samburu {
 	overflow-x: hidden;
 }
+.kalashat {
+	overflow-x: hidden;
+}
+.ocheanbays {
+	overflow-x: hidden;
+}
 .kitui {
+	overflow-x: hidden;
+}
+.kisumu {
+	overflow-x: hidden;
+}
+.housing {
 	overflow-x: hidden;
 }
 .case-study {
@@ -89,6 +101,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .hero-kitui {
@@ -104,6 +117,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .hero-housing {
@@ -119,6 +133,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .hero-ocheanbays {
 	position: relative;
@@ -133,6 +148,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .hero-kisumu {
 	position: relative;
@@ -147,6 +163,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .hero-kalashat {
 	position: relative;
@@ -161,4 +178,30 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+}
+
+@media only screen and (min-width: 391) and (max-width: 500px) {
+	.case-study-list ul li {
+		font-size: 14px;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 390px) {
+	.case-study-list ul li {
+		font-size: 12px;
+	}
+	.case-study-stats {
+		display: flex;
+		gap: 10px;
+	}
+
+	.case-study-stats div {
+		padding: 10px;
+	}
+	.case-study-stats h2 {
+		font-size: 1.3rem;
+	}
+	.case-study-stats p {
+		font-size: 12px;
+	}
 }

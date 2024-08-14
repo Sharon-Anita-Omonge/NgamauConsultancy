@@ -41,7 +41,7 @@ const Samburu = () => {
 						communities we serve.
 					</p>
 
-					<div>
+					<div className='case-study-list'>
 						<h2>Project Goals</h2>
 						<p>
 							The primary goals of our water assessment projects in Samburu

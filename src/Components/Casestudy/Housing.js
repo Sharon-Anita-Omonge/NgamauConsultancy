@@ -41,7 +41,7 @@ const Housing = () => {
 						affordable housing solutions.
 					</p>
 
-					<div>
+					<div className='case-study-list'>
 						<h2>Project Goals</h2>
 						<p>
 							Our consultancy services for affordable housing are aimed at
