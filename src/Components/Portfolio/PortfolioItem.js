@@ -2,6 +2,7 @@ import React from "react";
 import "./Portfolio.css";
 import arrow from "../../assets/arrow-up.png";
 import { Link } from "react-router-dom";
+import "./Portfolio.css";
 
 const PortfolioItem = ({ image, title, description, link }) => {
 	return (
