@@ -8,7 +8,7 @@
 }
 
 .navbar {
-	position: fixed; /* Keeps the navbar fixed to the top */
+	position: relative; /* Keeps the navbar fixed to the top */
 	top: 0;
 	width: 100%;
 	z-index: 999;
@@ -19,7 +19,8 @@
 	font-weight: 900;
 	transition: background-color 0.3s ease;
 	padding: 15px; /* Adjust for padding consistency */
-	background-color: transparent; /* Initial transparent background */
+	background-color: transparent;
+	background-color: var(--blue); /* Initial transparent background */
 }
 
 .navbar ul {
@@ -29,17 +30,6 @@
 	display: flex; /* Display list items in a row by default */
 	flex-direction: row;
 	background-color: transparent;
-}
-
-.navbar ul.open {
-	display: flex;
-	flex-direction: column; /* Change to column for mobile */
-	background-color: var(--blue); /* Apply the background color */
-	position: absolute;
-	top: 60px; /* Adjust to match the height of the navbar */
-	right: 0; /* Align the dropdown menu to the right side */
-	width: auto; /* Set width to auto so it fits the content */
-	z-index: 999;
 }
 
 .navbar ul li {
